@@ -27,7 +27,7 @@ namespace BirimCevirmeConsoleApp
                     else if (islem == "3")
                         deger = "\n" + sayi + " kg  >  " + (sayi * 1000) + " gram dır.\n";
                     else
-                        deger = "hatalı seçim";
+                        deger = "Böyle bir birim çevirisi bulunmamaktadır.";
                 }
                 else
                     deger = "\nSayıyı boş giremezsin\n\n";
@@ -39,3 +39,5 @@ namespace BirimCevirmeConsoleApp
         }
     }
 }
+
+
