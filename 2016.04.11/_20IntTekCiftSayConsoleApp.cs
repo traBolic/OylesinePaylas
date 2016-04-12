@@ -28,9 +28,8 @@ namespace _20IntTekCiftSayConsoleApp
                 }
                 catch { }
             } while (i <= 20);
-            Console.Write("\n" + tek + " adet Tek\n" + cift + " adet Çift\n\n");
+            Console.Write("\n" + tek + " adet Tek\n" + 
+                                cift + " adet Çift\n\n");
         }
     }
 }
-
-
