@@ -22,7 +22,7 @@ namespace N_Elemanlı1_50RastgeleDiziConsoleApp
                     for (int i = 0; i < dizi.Length; i++)
                     {
                         /*
-                         * 30. satır 1 - 50 arasında rastgele sayı üreterek
+                         * 28. satır 1 - 50 arasında rastgele sayı üreterek
                          * dizi içerisine sırasıyla atar.
                          */
                         dizi[i] = rast.Next(1, 50);
