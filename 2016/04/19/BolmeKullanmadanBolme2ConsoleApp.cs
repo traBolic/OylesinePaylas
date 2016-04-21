@@ -19,7 +19,14 @@ namespace BolmeKullanmadanBolme2ConsoleApp
                 a = a - b;
             }
 
-            Console.Write("\nBölüm=" + bolum + "\nKalan=" + a + "\n\n");
+            
+            Console.Write("Bölüm=");
+            Console.WriteLine(bolum);
+
+            Console.Write("Kalan=");
+            Console.WriteLine(a);
+
+            Console.ReadKey();
         }
     }
 }
