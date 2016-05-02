@@ -1,6 +1,6 @@
 using System;
 
-namespace GirileninBasamaklariniYazConsole
+namespace GirileninBasamaklariniYaz_v2Console
 {
     class Program
     {
