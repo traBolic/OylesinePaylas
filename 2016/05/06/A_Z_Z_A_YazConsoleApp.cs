@@ -7,9 +7,9 @@ namespace A_Z_Z_A_YazConsoleApp
         static void Main(string[] args)
         {
             for (char c = 'A'; c <= 'Z'; c++)
-                Console.WriteLine("  " + c);
+                Console.Write(c + " ");
 
-            Console.WriteLine("-----");
+            Console.WriteLine("\n-----");
 
             for (char c = 'Z'; c >= 'A'; c--)
                 Console.WriteLine("  " + c);
