@@ -1,0 +1,28 @@
+1 - Prompt'u masaüstüne konumlanlama
+  > cd $env:USERPROFILE\Desktop
+
+2 - Masaüstüne belirttiğin isimde dosya oluşturma
+  > New-Item $env:USERPROFILE\Desktop\Kadir.txt -type file
+
+3 - Oluşturduğun dosyayı Belgelerim içerisine taşıma
+  > Move-Item denemeeee.txt ../Documents
+
+4 - Oluşturulan dosyanın içerisine metin ekleme
+  > Add-Content $env:USERPROFILE\Documents\Kadir.txt "AYDOGDU"
+
+
+Lakin standart MSDOS - CMD prompt komutları ile gerçekleştirmek istenirse, aşağıdaki komutları kullanmalısın.
+1 - Prompt'u masaüstüne konumlanlama
+  > %USERPROFILE%\Desktop
+
+2 - Masaüstüne belirttiğin isimde dosya oluşturma
+  > echo > Kadir.txt
+
+3 - Oluşturduğun dosyayı Belgelerim içerisine taşıma
+  > move Kadir.txt %USERPROFILE%\Documents
+
+4 - Oluşturulan dosyanın içerisine metin ekleme
+  > echo AYDOGDU > %USERPROFILE%\Documents\Kadir.txt
+
+...
+http://eodev.com/gorev/8583194
