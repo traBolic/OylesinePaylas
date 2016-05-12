@@ -16,7 +16,7 @@ namespace IntTamBolenlerFormApp
             if (oncekiDeger != sayi)
             {
                 listSayilar.Items.Clear();
-                for (int i = 1; i <= sayi; i++)
+                for (decimal i = 1; i <= sayi; i++)
                     if (sayi % i == 0)
                         listSayilar.Items.Add(i + "");
                 oncekiDeger = sayi;
