@@ -1,0 +1,16 @@
+1 - BAŞLA
+2 - Hesapla()
+3 - DUR
+
+1 - Hesapla() BAŞLA
+2 - YAZ > "Sayi gir: "
+3 - OKU > deger
+4 - EĞER deger.Length == 4
+5 - EVET :
+6 - sayi = ToInt32( deger )
+7 - deger = "" + ((((sayi % 1000) / 100) % 3) - (sayi % 10)) ; 9. Adımdan devam et
+8 - HAYIR : deger = "4 Haneli Sayı Gir" ; 9. Adımdan devam et
+9 - YAZ > "\n" + deger + "\n\n"
+10 - Hesapla() DUR
+
+http://eodev.com/gorev/8622676
