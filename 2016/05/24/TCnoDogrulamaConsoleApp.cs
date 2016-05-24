@@ -7,10 +7,10 @@ namespace TCnoDogrulamaConsoleApp
         static void Main(string[] args)
         {
             int i, topla = 0;
+            string tcno, mesaj;
 
             Console.Write("T.C. Kimlik numarası gir: ");
-            string tcno = Console.ReadLine(),
-                   mesaj;
+            tcno = Console.ReadLine();
 
             for (i = 0; i < 10; i++)
                 topla += Convert.ToInt32(tcno[i].ToString());
