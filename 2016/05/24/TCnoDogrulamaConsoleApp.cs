@@ -23,4 +23,4 @@ namespace TCnoDogrulamaConsoleApp
         }
     }
 }
-//http://eodev.com/gorev/8709318
+//http://eodev.com/gorev/8709328
