@@ -1,4 +1,4 @@
-namespace _20OgrdenAdiEnUzunOgrenciyiSecFormApp
+namespace _10OgrdenAdiEnUzunOgrenciyiSecFormApp
 {
     partial class Form1
     {
