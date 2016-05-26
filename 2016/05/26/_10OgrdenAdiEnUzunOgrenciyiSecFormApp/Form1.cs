@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace _20OgrdenAdiEnUzunOgrenciyiSecFormApp
+namespace _10OgrdenAdiEnUzunOgrenciyiSecFormApp
 {
     public partial class Form1 : Form
     {
