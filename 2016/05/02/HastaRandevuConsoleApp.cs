@@ -29,7 +29,7 @@ namespace HastaRandevuConsoleApp
             Console.Write("Varsa kullandığınız ilaçlar(virgül ile ayırın): ");
             ilaclar = Console.ReadLine();
 
-            Console.Write("\n\n>  Sayın " + ad + " " + soyad + ";\n   Girdiğiniz bilgiler ile, "+tarih+" tarihinde ve " + saat + " saatinde, DR. " + doktor + " ile randevunuz alınmıştır.\n\n");*/
+            Console.Write("\n\n>  Sayın " + ad + " " + soyad + ";\n   Girdiğiniz bilgiler ile, "+tarih+" tarihinde ve " + saat + " saatinde, DR. " + doktor + " ile randevunuz alınmıştır.\n\n");
 
             
             /* Eski kod
