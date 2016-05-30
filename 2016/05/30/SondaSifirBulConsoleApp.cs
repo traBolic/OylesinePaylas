@@ -7,7 +7,7 @@ namespace SondaSifirBulConsoleApp
         static void Main(string[] args)
         {
             string deger = "",
-                   mesaj;
+                   mesaj = "";
 
             while (deger == "0" || deger == "")
             {
