@@ -26,7 +26,6 @@ namespace DikdortgenAlanHesaplaConsoleApp
                 }
                 else
                 {
-
                     d_uk = Convert.ToDouble(s_uk);
                     d_kk = Convert.ToDouble(s_kk);
                     
