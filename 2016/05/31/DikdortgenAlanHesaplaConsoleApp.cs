@@ -25,14 +25,24 @@ namespace DikdortgenAlanHesaplaConsoleApp
                     s_kk = Console.ReadLine();
                 }
                 else
-                    break;
+                {
+
+                    d_uk = Convert.ToDouble(s_uk);
+                    d_kk = Convert.ToDouble(s_kk);
+                    
+                    if (d_uk < 1)
+                        s_uk = "";
+                    else if (d_kk < 1)
+                        s_kk = "";
+                    else
+                    {
+                        alan = d_uk * d_kk;
+
+                        Console.Write("\nBelirlenen dikdörtgenin alanı: " + alan + "\n\n");
+                        break;
+                    }
+                }
             }
-
-            d_uk = Convert.ToDouble(s_uk);
-            d_kk = Convert.ToDouble(s_kk);
-            alan = d_uk * d_kk;
-
-            Console.Write("\nBelirlenen dikdörtgenin alanı: " + alan + "\n\n");
         }
     }
 }
