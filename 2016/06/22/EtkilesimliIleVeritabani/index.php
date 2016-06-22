@@ -23,9 +23,10 @@ input:not([type=radio]) {
 if(@$_GET["islem"]!=""){
 	// Aşağıdaki try catch kod bloğunda, blok arasına eklenen işlemleri işlemeyi dener. Önce $db değişkenine veritabanına bağlanmak için bir bağlantı açar. Çünkü veri tabanına veri girişi çıkışı yapabilmemiz için, açık bir bağlantıya ihtiyacımız olacak.
 	try {
+		// Bağlantı oluşturulurken, dbname değerine veritabanın adını veririz. host kısmına, veritabanı sunucusunun ip adresi veya internet adresi verilir. 2. ve 3. parametrelere de veritabanının kullanıcı adı ve şifresi girilir.
 		$vt = new PDO("mysql:dbname=eodevlocal;host=localhost", "root", "" );
 	} 
-	// Bağlantı başarılı olarak sağlanmazsa, ekrana hatayı yakalaması için catch fonksiyonu kullanır ve parametre altında gelecek olan dizideki mesajı ekrana echo ile yazdıdırır. 
+	// Bağlantı nesnesi, bağlantıyı başarılı olarak sağlayamazsa, hatayı yakalaması için catch fonksiyonu kullanır ve parametre altında gelecek olan dizideki mesajı ekrana echo ile yazdıdırır. 
 	catch(PDOException $e) {
 		echo $e->getMessage();
 	}
@@ -66,6 +67,7 @@ if(@$_GET["islem"]!=""){
 			$sil = $sorgu->execute(array(
 			   'kayit_id' => $_POST['kayit_id']
 			));
+			// Eğer silme işlemi başarılı ise ekrana başarılı mesajı verir.
 			if($sil){
 				echo '<br>Başarıyla silindi<br><br>';
 			}
@@ -111,11 +113,10 @@ if(@$_GET["islem"]!=""){
 		</tr>
 	</thead>
 	<?php
-	// Veritabanında kayıtlı verileri listelemek içinse, açık olan bağlantıyı kullanarak SELECT komutu ile veri tabanındaki verilere erişir, foreach döngüsü ile de veritabanından gelen her satır için döngü açar ve dönen kayıtlar için isteğe göre listeler.
-	
+	// Veritabanında kayıtlı verileri listelemek içinse, açık olan bağlantıyı kullanarak SELECT komutu ile veri tabanındaki verilere erişir, foreach döngüsü ile de veritabanından gelen her satır için döngü açar ve dönen kayıtlar için isteğe göre listeler. SELECT yapılırken * olan kısımda tablodaki sütunlar istenildiği durumda özel olarak belirtilebilir ve sütunları , virgül kullanara ayırabilirsiniz. Fakat veri çekerken tüm sütunları ele almak istiyorsanız * ifadesi koymak yeterli olacaktır. PDO::FETCH_ASSOC komutu, PDO nesnesinin bir özelliğidir. Veritabanından verileri çekerken, sütunları kendi indisine göre de ayırır. Fakat bizim için indise göre ayırmak çok da önemli değil çünkü indise göre değilde, daha rahat okuyabilmek için FETCH_ASSOC komutunu kullanarak sadece sütun adlarını çekiyor oluruz. 
 	$sorgu = $vt->query("SELECT * FROM EtkilesimliIleVeritabani", PDO::FETCH_ASSOC);
 	
-	// $sorgu içerisinde çekilen verinin sayısına bakılır. Eğer sayı 0 dan büyük bir sayı ise, listeleme yapılır
+	// Karar kullanarak $sorgu içerisinde çekilen verinin sayısına bakılır. Eğer sayı 0 dan büyük bir sayı ise, listeleme işlemlerine devam edilir.
 	if ( $sorgu->rowCount() ){
 		foreach( $sorgu as $kayit ){ ?>
 	<form action="?islem=guncelle" method="post" name="form1" id="form1">
