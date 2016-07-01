@@ -1,0 +1,16 @@
+sayac = 0
+do{
+	sayac++
+} while(sayac < 10)
+
+Yukarıda, diğer döngülerdeki işlemlerin aynısı yapılmaktadır. Tek fark dediğimiz gibi mantıksal karara en son bakıyor olması.
+
+Biz mantıksal karar noktasında sayac < 0 dan dersek, döngü 1 kere de olsa çalışacaktır.
+Fakat sayac 0 iken, 0 dan küçük dersek; dönmeyi sonlandıracaktır.
+Yani:
+sayac = 0
+do{
+	sayac++
+} while(sayac < 0)
+
+sayac değişkeninin değeri 1 olacaktır.
