@@ -1,0 +1,10 @@
+While döngüsü for döngüsüne kıyasen tanımlaması biraz farklıdır.
+Mantıksal karar için oluşturulan sınır haricinde bir tanımlama gerektirmez.
+
+sayac = 0
+while(sayac < 10){
+  sayac++
+}
+
+Bir önceki for döngüsü ile karşılaştırıldığında yukarıdaki while döngüsü, for döngüsü ile aynı işlemleri yapmaktadır. 
+Fakat görmüş olduğunuz gibi tanımlamalar ve artım değerleri parametre arasında verilmemektedir.
