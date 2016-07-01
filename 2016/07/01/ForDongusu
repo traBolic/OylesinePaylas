@@ -1,0 +1,13 @@
+For döngüsü oluşturmak için öncelikle döngüyü tanımlamak gerekir. Döngüyü tanımlamaya öncelikle döngünün adıyla başlanılır. Bu da for() şeklinde yazılır ve sonra parametresi girilir. Parametre arasında tanımlamaları ayırmak içinde ; ayracı kullanılır.
+
+for(sayac=0 ; sayac < 10 ; sayac++){
+}
+
+Yukarıda 0 dan başlayıp 10 a kadar dönecek bir sayac döngüsünün tanımı var. Bu döngü sayac değişkeninin 0 dan başlaması ve sayac++ tanımının olması sebebiyle her dönüşünde sayac değişkenine sayacın önceki değerine 1 ekleyerek toplamasını yaptırır.
+Yani:
+sayac = 0
+1. dönüş-) sayac = sayac + 1
+2. dönüş-) sayac = sayac + 1
+.....
+10. dönüş-) sayac = sayac + 1
+en son olarak 10 kere döndükten sonra sayacın değişkeni 9 olarak tanımlanacak ve döngü sonlanmış olacaktır.
